@@ -1,6 +1,6 @@
 package com.alex.ui.base
 
 import androidx.annotation.LayoutRes
-import androidx.fragment.app.Fragment
+import dagger.android.support.DaggerFragment
 
-open class BaseFragment(@LayoutRes layoutId: Int) : Fragment(layoutId)
+open class BaseFragment(@LayoutRes layoutId: Int) : DaggerFragment(layoutId)
