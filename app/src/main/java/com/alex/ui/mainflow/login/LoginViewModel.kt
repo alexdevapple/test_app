@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.alex.data.providers.SchedulersProvider
 import com.alex.ui.base.BaseViewModel
+import com.alex.utils.SingleLiveEvent
 import com.alex.utils.defaultSchedulers
 import javax.inject.Inject
 
@@ -17,8 +18,8 @@ class LoginViewModel @Inject constructor(
     val result: LiveData<String> get() = _result
 
     private val _isLoading = MutableLiveData<Boolean>()
-    private val _error = MutableLiveData<String>()
-    private val _result = MutableLiveData<String>()
+    private val _error = SingleLiveEvent<String>()
+    private val _result = SingleLiveEvent<String>()
 
     fun login(email: String, password: String) {
         _isLoading.value = true
