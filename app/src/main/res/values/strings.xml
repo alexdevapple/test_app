@@ -3,4 +3,12 @@
     <string name="text_view_hint_email">Email</string>
     <string name="text_view_hint_password">Password</string>
     <string name="button_login">Login</string>
+
+    <string name="text_error_internal_server_error">Internal server error</string>
+    <string name="text_error_unknown_error">Unknown error</string>
+    <string name="text_error_wrong_credentials">Wrong credentials</string>
+    <string name="text_error_something_went_wrong">Something went wrong</string>
+    <string name="text_error_invalid_email">Email is empty</string>
+    <string name="text_error_invalid_password">Password is empty</string>
+    <string name="text_logged_in_successfully">It works!</string>
 </resources>
