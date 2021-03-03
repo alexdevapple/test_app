@@ -5,6 +5,7 @@ import com.alex.AlexApplication
 import com.alex.di.modules.ActivityModule
 import com.alex.di.modules.AppModule
 import com.alex.di.modules.FragmentsModule
+import com.alex.di.modules.PresentationModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -18,7 +19,8 @@ import javax.inject.Singleton
         AndroidSupportInjectionModule::class,
         ActivityModule::class,
         FragmentsModule::class,
-        AppModule::class
+        AppModule::class,
+        PresentationModule::class
     ]
 )
 interface AppComponent : AndroidInjector<DaggerApplication> {
